@@ -1,0 +1,220 @@
+.bg-image {
+    background-image: url("../shared/img/main-image.png");
+    min-height: 1000px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+
+    .container {
+        position: absolute;
+        margin: 0.5em;
+        width: auto;
+    }
+
+    .navbar {
+        width: 100%;
+        padding: 2rem 2rem;
+        
+        overflow: hidden;
+
+        display: flex;  
+        align-items: center;
+        justify-content: center;
+    
+        #logo {
+            font-family: 'Yuji Boku', serif;
+            display: flex;
+            font-size: 2.5em;
+            color:  rgb(13,47,63);
+
+            float: left;
+            text-align: left;
+            vertical-align: top;
+            text-transform: none;
+            width: 8em;
+        }
+    
+        #phone-number {
+            float: right;
+            display: flex;
+            align-items: right;
+            justify-content: right;
+            vertical-align: middle;
+            width: 13em;
+            color:  rgb(13,47,63);
+        }
+    
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    
+        li {
+            float: left;
+            margin: 0em 1em;
+            height: 4em;
+    
+            a {
+                padding: 8px;
+               
+                display: block;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                
+                font-family: 'News Cycle', sans-serif;
+                text-transform: uppercase;
+            }
+
+            .phone-button {
+                    width: 45px;
+                    height: 45px;
+                    padding: 2%;
+                    min-height: 45px;
+
+                    border-radius: 60%;    
+                    border: 0;
+                    
+                    background-image: url("../shared/img/phone_call_icon.png");
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                
+                    position: relative;
+            }
+
+            .phone-button:hover {
+                background-image: url("../shared/img/phone_call_iverse_icon.png");
+            }
+    
+            .navbar-button {
+                color: rgb(40,111,108);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                vertical-align: middle;
+                position: relative;
+                width: 7.5em;
+            }
+    
+            .navbar-button::before{
+                content: '';
+                position: absolute;
+                top: 5%;
+                left: 5%;
+                right: 5%;
+                bottom: 5%;
+                border-top: solid 2px rgb(248,247,241);
+                border-bottom: solid 2px rgb(248,247,241);
+                border-left: solid 2.5px;
+                border-right: solid 2.5px;
+                border-radius: 45%;
+                transition: 0.2s;
+                transform: scaleX(0);
+            }
+    
+            .navbar-button:hover::before {
+                transform: scale(1);
+            }
+        }
+    }
+}
+
+.content {
+    table {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        tr {
+            margin: 0 15%;
+
+            td {
+                width: 35%; 
+                color:  rgb(40,111,108);
+                font-family: 'News Cycle', sans-serif;
+                font-size: 1em;
+
+                h2 {
+                    color:  rgb(13,47,63);
+                    font-weight: bold;
+                    font-size: 3.5em;
+                    margin: 1%;
+                }
+
+                .statistics {
+                    .stat-numbers {
+                        display: inline-block;
+                        margin-right: 5%;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .btn-group {
+        button {
+            margin: 1em 5em;
+            width: 25em;
+            height: 10em;
+
+            background-color: rgb(248,247,241);
+            border: 1.5px solid rgb(218, 218, 218);
+            border-radius: 10%;
+
+            cursor: pointer;
+            display: block;
+            float: right;
+            text-align: left;
+
+            img {
+                min-width: 50px;
+                height: 50px;
+            }
+
+            .header-button {
+                color:  rgb(13,47,63);
+                font-size: 1.5em;
+                font-weight: bold; 
+                margin: 0;
+            }
+
+            .text-button{
+                font-family: 'News Cycle', sans-serif;
+                color:  rgb(40,111,108);
+                margin: 0;
+            }
+            
+        }
+        
+        .websites-button button:hover {
+            background-color: rgb(40,111,108);
+            .header-button, .text-button {
+                color: white;
+            }
+        }
+        
+        .mobile-app-button button:hover {
+            background-color: rgb(238,192,73);
+            .header-button, .text-button {
+                color: white;
+            }
+        }
+        
+        .brand-button button:hover {
+            background-color: rgb(242,100,64);
+            .header-button, .text-button {
+                color: white;
+            }
+        }
+    }   
+}
+  
+
