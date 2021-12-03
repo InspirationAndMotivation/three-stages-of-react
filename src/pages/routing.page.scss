@@ -1,0 +1,123 @@
+$images: ('../shared/img/post-in-note-1.png',
+    '../shared/img/post-in-note-2.png',
+    '../shared/img/post-in-note-3.png',
+    '../shared/img/post-in-note-4.png');
+$img: nth($images, random(length($images)));
+
+.routing-page {
+    font-family: 'Titillium Web', sans-serif;
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    
+        li {
+            float: left;
+            font-weight: 600;
+        
+            a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 35px;
+                text-decoration: none;
+            }
+            
+            a:hover {
+                background-color: #111;
+            }
+        }
+        
+        .active {
+            background-color: #5204aa;
+        }
+    }
+}
+
+.cards-table {
+    font-family: 'Titillium Web', sans-serif;
+
+    th {
+        background-color: #5204aa;
+        color: white;
+        font-weight: 600;
+    }
+
+    td {
+        text-align: center;
+
+        input, textarea {
+            border: none;
+            background-color: rgba( white, 0);
+            color: black;
+            width: 80%;
+            text-align: center;
+            font-family: 'Titillium Web', sans-serif;
+        }
+    }
+
+    button {
+        background-color: #5204aa;
+        text-align: center;
+        padding: 20%;
+    }
+
+    button:hover {
+        background-color: #2e0261;
+    }
+
+    .del-button {
+        background-image: url("../shared/img/white_trash.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+    }
+
+    .add-button {
+        background-image: url("../shared/img/white_plus.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+    }
+}
+
+.note {
+    position: absolute;
+    cursor: pointer;
+    background-image: url(#{$img});
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    padding-top: 50px;
+    padding-left: 25px;
+    padding-right: 15px;
+
+    .title {
+        width: 100%;
+        height: 20%;
+        white-space: pre-wrap;
+        overflow-y: scroll;
+        color: #2e0261;
+
+        font-family: 'Homemade Apple', cursive;
+        font-size: 1.25em;
+    }
+
+    .description {
+        height: 70%;
+        width: 100%;
+        margin: 0;
+        white-space: pre-wrap;
+        overflow-y: scroll;
+        color: #2e0261;
+        
+        font-family: 'Homemade Apple', cursive;
+        font-size: 1em;
+    }
+    
+}

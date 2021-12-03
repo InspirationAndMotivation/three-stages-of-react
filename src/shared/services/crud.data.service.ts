@@ -1,24 +1,20 @@
-export function getProducts() {
-    return fetch('http://localhost:3005/products').then((data) => data.json());
-}
+import axios from 'axios';
 
-export function setProduct(
-    product_name: string,
-    price: number,
-    discontinued: boolean,
-    units_in_stock: number,
-) {
-    return fetch('http://localhost:3005/products', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({product_name, price, discontinued, units_in_stock}),
-    }).then((data) => data.json());
-}
+const url = 'http://localhost:3005/products';
 
-export function deleteProduct() {
-    return fetch('http://localhost:3005/products', {
-        method: 'DELETE',
-    }).then((data) => data.json());
-}
+export const getProducts = async (id: any) => {
+    id = id || '';
+    return await axios.get(`${url}/${id}`);
+};
+
+export const addProducts = async (product: any) => {
+    return await axios.post(url, product);
+};
+
+export const editProducts = async (id: number, product: any) => {
+    return await axios.put(`${url}/${id}`, product);
+};
+
+export const deleteProducts = async (id: number) => {
+    return await axios.delete(`${url}/${id}`);
+};

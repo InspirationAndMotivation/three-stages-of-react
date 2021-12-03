@@ -460,8 +460,7 @@
         }
         
         img {
-            min-width: 400px;
-            min-height: 350px;
+            max-height: 25em;
             border-radius: 10px;
             object-fit: cover;
         }

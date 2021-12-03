@@ -10,15 +10,18 @@ const MainRouter = () => {
         <HomeWrapper>
             <Switch>
                 <Route exact path="/">
-                    <Redirect to="/task1" />
+                    <Redirect to="/portfolio" />
                 </Route>
-                <Route path="/task1">
+                <Route path="/portfolio">
                     <PortfolioPage />
                 </Route>
-                <Route path="/task2">
+                <Route path="/products">
                     <TablePage />
                 </Route>
-                <Route path="/task3">
+                <Route path="/cards">
+                    <RoutingTaskPage />
+                </Route>
+                <Route path="/editor">
                     <RoutingTaskPage />
                 </Route>
             </Switch>

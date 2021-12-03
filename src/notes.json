@@ -1,0 +1,29 @@
+{
+  "notes": [
+    {
+      "title": "Pomóc mamie",
+      "description": "Umyć podłogę",
+      "id": 4
+    },
+    {
+      "title": "Dobra sprawa",
+      "description": "Przynieść jedzenie dla piesków",
+      "id": 5
+    },
+    {
+      "title": "Zakupy",
+      "description": "Kukurydza, mięso, śmietana, ogórek, pomidor, papryka, pieprz, sól, coś słodkiego",
+      "id": 6
+    },
+    {
+      "title": "Sąsiad",
+      "description": "Proszę jutro posprzątać mieszkanie!",
+      "id": 7
+    },
+    {
+      "title": "PILNE",
+      "description": "Zadzwonić do DZIEKANATU",
+      "id": 8
+    }
+  ]
+}

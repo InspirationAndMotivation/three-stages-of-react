@@ -1,5 +1,9 @@
 import React from 'react';
 import './portfolio.page.scss';
+import brand_design from '../shared/img/fokus-app-design.png';
+import app_design from '../shared/img/restaurant-app-design.png';
+import web_design from '../shared/img/crypto-app-design.png';
+
 const pAbout1 =
     'I will help you with finging a solution and solve your problems, ' +
     'We use process design to create digital products. Besides that also ' +
@@ -143,22 +147,13 @@ const PortfolioPage = () => {
                         <input type="radio" name="slider" id="item-3" />
                         <div className="cards">
                             <label className="card" htmlFor="item-1" id="work-1">
-                                <img
-                                    src={require('../shared/img/restaurant-app-design.png')}
-                                    alt="App Design"
-                                />
+                                <img src={web_design} alt="Web Design" />
                             </label>
                             <label className="card" htmlFor="item-2" id="work-2">
-                                <img
-                                    src={require('../shared/img/restaurant-app-design.png')}
-                                    alt="Web Design"
-                                />
+                                <img src={app_design} alt="App Design" />
                             </label>
                             <label className="card" htmlFor="item-3" id="work-3">
-                                <img
-                                    src={require('../shared/img/restaurant-app-design.png')}
-                                    alt="Brand Design"
-                                />
+                                <img src={brand_design} alt="Brand Design" />
                             </label>
                         </div>
                     </div>
